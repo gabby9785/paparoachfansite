@@ -1,0 +1,161 @@
+body {
+  background-color: #000000;
+  font-family: 'Oswald', sans-serif;
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main   aside"
+    "footer footer";
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+header {
+  background-color: #000000;
+  grid-area: header;
+}
+
+main {
+  background-color: #ffffff;
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  grid-area: main;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+
+  table{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+  caption{
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+table{
+  width: 100%;
+}
+
+thead{
+  text-align: center;
+  background-color: #ff0000;
+}
+
+tbody{
+  color: #ffffff;
+}
+
+tr:hover{
+  color: #C1070A;
+}
+
+tr{
+  border: 1px solid #ffffff;
+  display: run-in;
+  margin: 7px;
+}
+
+th{
+  text-align: center;
+  background-color: #C1070A;
+  color: #ffffff;
+  padding: 7px;
+}
+
+td{
+  padding: 7px;
+  background-color: #000000;
+}
+
+  @media (max-width: 600px) {
+
+table{
+    width: 100%;
+}
+
+thead{
+    display: none;
+}
+
+tr{
+    border: 1px solid #7A070A;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+td{
+    display: block;
+    text-align: right;
+}
+
+td:before{
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+}
+
+img.circle {
+    border-radius: 50%;
+    width: 160px;
+}
+
+aside {
+  background-image: url("images/red-black-background.jpg");
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  grid-area: aside;
+  margin-bottom: 7px;
+  text-align: center;
+  padding: 7px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    grid-area: footer;
+    padding: 7px;
+}
+
+a{
+  font-size:
+  color: #ffffff;
+}
+
+a:link{
+  color: #ffffff;
+}
+
+a:visited{
+  color: #ffffff;
+}
+
+a:hover{
+  color: #C1070A;
+}
+
+
+@media (max-width: 600px) {
+  div.container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+  }
+}
