@@ -1,6 +1,6 @@
 body {
   background-color: #000000;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 div.container {
@@ -24,7 +24,6 @@ header {
 main {
   background-color: #ffffff;
   color: #ffffff;
-  font-family: 'Oswald', sans-serif;
   font-size: 20px;
   grid-area: main;
   padding: 10px;
@@ -34,13 +33,12 @@ main {
 
 h2 {
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
   font-size: 40px;
 }
 
-h3{
+p {
+  font-weight: bold;
   text-transform: lowercase;
-  font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
 
@@ -66,6 +64,8 @@ thead{
 
 tbody{
   color: #ffffff;
+  text-transform: none;
+  font-size: 20px;
 }
 
 tr:hover{
@@ -94,32 +94,32 @@ td{
   text-transform: none;
 }
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
 
-table{
-    width: 100%;
-}
+  table{
+      width: 100%;
+  }
 
-thead{
-    display: none;
-}
+  thead{
+      display: none;
+  }
 
-tr{
-    border: 1px solid #7A070A;
-    display: block;
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
+  tr{
+      border: 1px solid #7A070A;
+      display: block;
+      margin-top: 7px;
+      margin-bottom: 7px;
+  }
 
-td{
-    display: block;
-    text-align: right;
-}
+  td{
+      display: block;
+      text-align: right;
+  }
 
-td:before{
-    content: attr(aria-label);
-    float: left;
-    font-weight: bold;
+  td:before{
+      content: attr(aria-label);
+      float: left;
+      font-weight: bold;
   }
 }
 
@@ -135,7 +135,6 @@ img.circle {
 aside {
   background-image: url("images/red-black-background.jpg");
   color: #ffffff;
-  font-family: 'Oswald', sans-serif;
   font-size: 20px;
   grid-area: aside;
   margin-bottom: 7px;
@@ -147,7 +146,6 @@ aside {
 footer {
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Oswald', sans-serif;
     grid-area: footer;
     padding: 7px;
 }
