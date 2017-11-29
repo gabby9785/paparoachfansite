@@ -7,7 +7,7 @@ div.container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
-    "header header"
+    "header aside"
     "main   aside"
     "footer footer";
   margin-left: auto;
@@ -18,6 +18,7 @@ div.container {
 header {
   background-color: #000000;
   grid-area: header;
+  padding: 10px;
 }
 
 main {
@@ -29,22 +30,33 @@ main {
   padding: 10px;
   text-align: center;
   background: rgba(0, 0, 0, 0.4);
-
-  table{
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-  }
 }
 
-  caption{
+h2 {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+
+h3{
+  text-transform: lowercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+caption{
   color: #ffffff;
-  font-size: 34px;
+  font-size: 40px;
   font-weight: bold;
+  padding-bottom: 7px;
+  text-transform: uppercase;
 }
 
 table{
-  width: 100%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 
 thead{
@@ -71,11 +83,15 @@ th{
   background-color: #C1070A;
   color: #ffffff;
   padding: 7px;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
 td{
   padding: 7px;
   background-color: #000000;
+  font-size: 20px;
+  text-transform: none;
 }
 
   @media (max-width: 600px) {
@@ -123,8 +139,9 @@ aside {
   font-size: 20px;
   grid-area: aside;
   margin-bottom: 7px;
+  max-height: 1480px;
   text-align: center;
-  padding: 7px;
+  padding: 10px;
 }
 
 footer {
@@ -134,6 +151,47 @@ footer {
     grid-area: footer;
     padding: 7px;
 }
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover{
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #D43B6A;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 
 a{
   font-size:
